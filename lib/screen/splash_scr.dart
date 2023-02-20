@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     _navigatehome();
   }
   _navigatehome()async{
-    await Future.delayed( const Duration(milliseconds: 5100),(){});
+    await Future.delayed( const Duration(milliseconds: 2100),(){});
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
   }
   @override
@@ -27,9 +27,9 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Container(
+         padding: const EdgeInsets.all(110),
 
-
-          child: Image.asset('images.jpeg'),
+          child: Image.asset('images/linkedin.png',scale: 1,),
         ),
       ),
     );
