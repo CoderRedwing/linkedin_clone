@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:linkedin/screen/signup.dart';
+import 'package:linkedin/sign_in.dart';
 import 'package:linkedin/widgets/button.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -63,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   GestureDetector(
                     onTap: (){
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const JoinNow()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>const JoinNow()));
                     },
                     child: Container(
                       height: 38,
@@ -86,7 +87,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   RoundButton(title: 'Continue with Facebook', onTap: (){}),
                   const SizedBox(height: 15,),
                   GestureDetector(
-                    onTap: (){},
+                    onTap: (){
+                     Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignIn()));
+                    },
                     child: Container(
                       height: 38,
                       width: 315,

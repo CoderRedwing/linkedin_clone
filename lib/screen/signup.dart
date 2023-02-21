@@ -72,7 +72,7 @@ class JoinNow extends StatelessWidget {
               const SizedBox(height: 35,),
               GestureDetector(
                 onTap: (){
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const JoinNow()));
+
                 },
                 child: Container(
                   height: 38,
