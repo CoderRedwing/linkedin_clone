@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:linkedin/widgets/button.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -117,9 +118,20 @@ class _SignInState extends State<SignIn> {
                   ),
 
                 ),
+                const SizedBox(height: 10,),
+                const Text('------------------------------------------or----------------------------------------'),
+                const SizedBox(height: 10,),
+                RoundButton(title: 'Sign in with Google', onTap: (){}),
+                const SizedBox(height: 10,),
+                RoundButton(title: 'Sign in with Facebook', onTap: (){}),
+                const SizedBox(height: 10,),
+                RoundButton(title: 'sign in with Apple', onTap: (){}),
               ]
+
           ),
-        ) );
+
+        )
+    );
 
   }
 }
